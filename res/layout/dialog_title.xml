@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/DialogTitleLayoutStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/titleImage" style="@style/DialogTitleImageStyle" />
+    <TextView android:id="@id/titleText" style="@style/DialogTItleTextView" />
+</LinearLayout>

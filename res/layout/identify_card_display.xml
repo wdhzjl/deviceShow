@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/header" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" android:layout_below="@+id/top_layout">
+        <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="10.0dip" android:layout_weight="1.0">
+                <TextView android:textSize="18.0sp" android:textColor="@color/deep_gray" android:gravity="center_vertical" android:id="@+id/now_device" android:background="@drawable/test_status_bg" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="42.0dip" />
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/module_bg" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+                    <TextView android:textSize="20.0sp" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/idcard_title" />
+                    <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+                        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="120.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+                            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                                <TextView android:textSize="16.0sp" android:textColor="@color/idcard_field_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/idcard_name" />
+                                <TextView android:textSize="16.0sp" android:textColor="@color/idcard_info_text" android:id="@+id/idc_info1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="..." />
+                            </LinearLayout>
+                            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                                <TextView android:textSize="16.0sp" android:textColor="@color/idcard_field_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/idcard_gender" />
+                                <TextView android:textSize="16.0sp" android:textColor="@color/idcard_info_text" android:id="@+id/idc_info2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="..." />
+                                <TextView android:textSize="16.0sp" android:textColor="@color/idcard_field_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/idcard_nation" />
+                                <TextView android:textSize="16.0sp" android:textColor="@color/idcard_info_text" android:id="@+id/idc_info8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="..." />
+                            </LinearLayout>
+                            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                                <TextView android:textSize="16.0sp" android:textColor="@color/idcard_field_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/idcard_birthday" />
+                                <TextView android:textSize="16.0sp" android:textColor="@color/idcard_info_text" android:id="@+id/idc_info3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="..." />
+                            </LinearLayout>
+                            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                                <TextView android:textSize="16.0sp" android:textColor="@color/idcard_field_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/idcard_address" />
+                                <TextView android:textSize="16.0sp" android:textColor="@color/idcard_info_text" android:id="@+id/idc_info4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="..." />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <ImageView android:id="@+id/people_photo" android:layout_width="100.0dip" android:layout_height="120.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+                    </RelativeLayout>
+                    <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="120.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+                            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                                <TextView android:textSize="16.0sp" android:textColor="@color/idcard_field_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/idcard_idno" />
+                                <TextView android:textSize="16.0sp" android:textColor="@color/idcard_info_text" android:id="@+id/idc_info5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="..." />
+                            </LinearLayout>
+                            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                                <TextView android:textSize="16.0sp" android:textColor="@color/idcard_field_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/idcard_signoffice" />
+                                <TextView android:textSize="16.0sp" android:textColor="@color/idcard_info_text" android:id="@+id/idc_info6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="..." />
+                            </LinearLayout>
+                            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="20.0dip">
+                                <TextView android:textSize="16.0sp" android:textColor="@color/idcard_field_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/idcard_expirydate" />
+                                <TextView android:textSize="16.0sp" android:textColor="@color/idcard_info_text" android:id="@+id/idc_info7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="..." />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <ImageView android:id="@+id/people_photo_byte" android:layout_width="100.0dip" android:layout_height="120.0dip" android:layout_alignParentRight="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <Button android:textSize="18.0sp" android:textColor="@android:color/white" android:id="@+id/sel_other_device" android:background="@drawable/button_pay_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:text="@string/ok" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

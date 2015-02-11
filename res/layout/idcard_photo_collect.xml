@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@+drawable/mbopbg" android:padding="30.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="5.0dip" android:layout_weight="1.0">
+        <TextView android:textSize="20.0sp" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="@string/frontalPhoto" />
+        <ImageView android:id="@+id/frontal_photo_img" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/idcard_default_frontal" android:scaleType="fitCenter" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="5.0dip" android:layout_weight="1.0">
+        <TextView android:textSize="20.0sp" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="@string/oppositePhoto" />
+        <ImageView android:id="@+id/opposite_photo_img" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/idcard_default_opposite" android:scaleType="fitCenter" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="80.0dip" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <Button android:id="@+id/frontal_photo_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/frontalPhoto" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <Button android:id="@+id/opposite_photo_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/oppositePhoto" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <Button android:id="@+id/ok_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/ok" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <Button android:id="@+id/clear_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/clear" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

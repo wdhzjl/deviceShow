@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="#ffffffff"
+    android:scrollbars="vertical" >
+
+   <RelativeLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    <include
+        android:id="@+id/include1"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        layout="@layout/header" /> 
+
+    <RelativeLayout
+        android:id="@+id/device"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/include1"
+        android:paddingBottom="10dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:paddingTop="10dp" >
+         <Button
+                android:id="@+id/bt_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bt_selector"
+                android:text="一、身份识别:"
+                android:textSize="25sp"
+                android:textStyle="bold"      
+             />
+        <Button
+               android:id="@+id/bt_sm"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="二代证拍照"
+               android:textSize="25sp"
+               android:textStyle="bold"
+               android:layout_below="@id/bt_id" 
+               android:layout_marginLeft="150dp" 
+               android:background="@drawable/bt_selector"
+              android:drawableTop="@drawable/card"        
+            /> 
+      <Button
+              android:id="@+id/bt_pz"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="二代证扫描"
+              android:textSize="25sp"
+              android:textStyle="bold"
+              android:layout_toRightOf="@id/bt_sm" 
+              android:layout_marginLeft="150dp"  
+              android:background="@drawable/bt_selector"
+              android:drawableTop="@drawable/card_rd"
+              android:layout_alignBottom="@id/bt_sm"          
+            /> 
+         <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="@color/gray"
+             android:layout_below="@id/bt_pz" 
+             android:id="@+id/t1"
+             />                           
+      
+      <Button
+        android:id="@+id/bt_hm"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="二、选择号码:"
+               android:textSize="25sp"
+               android:textStyle="bold"
+               android:layout_below="@id/t1"   
+               android:background="@drawable/bt_selector" 
+               android:layout_alignLeft="@id/bt_id"         
+            /> 
+     <TextView android:id="@+id/spinnerText02"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bt_hm" 
+            android:textSize="25dp" 
+            android:textColor="@color/blue_gb"/>
+      
+    <Spinner android:id="@+id/Spinner02"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:layout_below="@id/spinnerText02"
+           android:textSize="25dp"/>   
+             
+         <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="@color/gray"
+            android:layout_below="@id/Spinner02" 
+            android:id="@+id/t2"
+             />                           
+     <Button
+        android:id="@+id/bt_tc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="三、套餐选择:"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_below="@id/t2"   
+               android:background="@drawable/bt_selector" 
+               android:layout_alignLeft="@id/bt_id"         
+            />  
+      <TextView android:id="@+id/spinnerText03"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bt_tc" 
+            android:textSize="25dp" 
+            android:textColor="@color/blue_gb"/>
+      
+    <Spinner  
+           android:id="@+id/Spinner03"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:layout_below="@id/spinnerText03"
+           android:textSize="25dp"/> 
+     <Button 
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:text="确定"
+      android:background="@color/bt_red"
+      android:textSize="25dp"
+      android:id="@+id/sim_success"
+      android:layout_below="@id/Spinner03"
+      android:layout_marginTop="40dp"
+     />        
+                   
+  </RelativeLayout>     
+</RelativeLayout> 
+ </ScrollView>

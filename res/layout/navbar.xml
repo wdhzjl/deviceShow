@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:id="@+id/top_layout" android:background="@drawable/navigation_bg" android:paddingLeft="10.0dip" android:paddingTop="5.0dip" android:paddingRight="10.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="48.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:textSize="16.0sp" android:textColor="@color/buttonTextColor" android:gravity="center" android:id="@+id/back_btn" android:background="@drawable/navbar_leftbtn" android:layout_width="58.0dip" android:layout_height="38.0dip" android:text="@string/go_back" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="23.0sp" android:textColor="@color/navigationTitleTextColor" android:ellipsize="end" android:gravity="center" android:id="@+id/navigation_title" android:layout_width="wrap_content" android:layout_height="fill_parent" android:singleLine="true" android:layout_centerHorizontal="true" />
+    <Button android:textSize="16.0sp" android:textColor="@color/buttonTextColor" android:gravity="center" android:id="@+id/recommend_btn" android:background="@drawable/navbar_rightbtn" android:visibility="gone" android:layout_width="58.0dip" android:layout_height="38.0dip" android:text="@string/recommend" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

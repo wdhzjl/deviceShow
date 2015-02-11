@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="25dp"
+    android:paddingRight="25dp"
+    android:paddingTop="10dp"
+    >
+  <include
+        android:id="@+id/include1"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        layout="@layout/header"
+      />   
+ <EditText 
+      android:layout_width="fill_parent"
+      android:layout_height="60dp"
+      android:hint="请输入手机号码"
+      android:textSize="25dp"
+      android:id="@+id/num" 
+      android:layout_below="@id/include1"  
+      android:layout_marginTop="40dp" 
+     /> 
+      <TextView android:id="@+id/spinnerText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/num" 
+            android:textSize="25dp" />
+      
+ <Spinner  android:id="@+id/Spinner01"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:layout_below="@id/spinnerText"
+           android:textSize="25dp"/>
+ <Button 
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:text="立即充值"
+      android:background="@color/bt_red"
+      android:textSize="25dp"
+      android:id="@+id/pay_success"
+      android:layout_below="@id/Spinner01"
+      android:layout_marginTop="40dp"
+     />                   
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SettingParams>
+	<bSelfStart>true</bSelfStart>
+	<waitTimeBeforeTest>10</waitTimeBeforeTest>
+	<itvalTimeOfTest>2</itvalTimeOfTest>
+	<waitTimeToReboot>2</waitTimeToReboot>
+</SettingParams>
